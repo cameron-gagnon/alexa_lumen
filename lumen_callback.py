@@ -40,8 +40,10 @@ def control_lights(state):
     return statement("")
 
 
-try:
-    app.run(debug=True)
-except Exception as e:
-    logging.error("An error occurred: {}".format(e.errno, e.strerror))
-
+while True:
+    try:
+        app.run(debug=True)
+        while True:
+            pass
+    except Exception as e:
+        logging.error("An error occurred: {}".format(e.errno, e.strerror))
