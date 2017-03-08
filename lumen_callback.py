@@ -46,4 +46,4 @@ while True:
         while True:
             pass
     except Exception as e:
-        logging.error("An error occurred: {}".format(e.errno, e.strerror))
+        logging.error("An error occurred: {}\n{}".format(e.errno, e.strerror))
