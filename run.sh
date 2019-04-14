@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "Killing any previous alexa_lumen/{lumen_callback.py|ngrok} processes"
+
 ps aux | grep ngrok | tee /dev/tty | sudo kill $(awk '{print $2}')
 ps aux | grep lumen | tee /dev/tty | sudo kill $(awk '{print $2}')
 

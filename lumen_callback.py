@@ -16,6 +16,7 @@ URL="http://127.0.0.1:" + str(PORT) + "/signal/"
 # used to translate the state from the skill to the opcode used in the program
 lookup = {
     "maize and blue": "mandb",
+    "rainbow": "gerald",
 }
 
 
